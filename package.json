@@ -1,0 +1,14 @@
+{
+  "name": "Yggdrasil",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Spatial memory interface for AI agents — memories live as bindings on the world tree",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-realms.mjs",
+    "serve": "npx --yes serve . -l 4173",
+    "check": "node tools/selftest.mjs"
+  },
+  "keywords": ["memory", "ai-agents", "knowledge-graph", "visualization", "norse"],
+  "license": "MIT"
+}

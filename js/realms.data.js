@@ -1,0 +1,49 @@
+/* Generated from data/realms.json by tools/build-realms.mjs — do not edit by hand.
+   Edit the JSON, then run: node tools/build-realms.mjs
+   This exists because fetch/XHR is blocked on file:// — the UI must work by
+   opening index.html directly, not only when served. */
+window.YGGDRASIL_REALMS_DATA = {
+  "schema": "yggdrasil/realm.v1",
+  "realms": [
+    {
+      "id": "asgard",
+      "name": "Asgard",
+      "sphere": "consolidated &mdash; true, load-bearing knowledge",
+      "title": "The high seat of the gods",
+      "deep": "What the agent trusts without hesitation. Facts verified, deduplicated, survived many recall cycles. A memory only ascends to Asgard when it has been recalled enough times to be re-derived rather than merely repeated.",
+      "kind": "epistemic",
+      "color": "#f2d98d",
+      "glow": "rgba(242,217,141,.55)"
+    },
+    {
+      "id": "midgard",
+      "name": "Midgard",
+      "sphere": "working &mdash; what the agent is doing right now",
+      "title": "The middle realm of the living",
+      "deep": "Task state. Current goals, in-flight reasoning, open questions, recent decisions. Midgard memory is deliberately volatile: it ages fast so that stale working state never masquerades as settled truth.",
+      "kind": "episodic",
+      "color": "#8fd6b4",
+      "glow": "rgba(143,214,180,.5)"
+    },
+    {
+      "id": "vanahelm",
+      "name": "Vanaheim",
+      "sphere": "generative &mdash; hypotheses not yet grounded",
+      "title": "The realm of the creator's breath",
+      "deep": "Speculation, drafts, half-formed connections. Vanaheim holds what MIGHT be true so that Midgard is not cluttered with guesses. Nothing here may be cited as fact until it earns its way up the tree.",
+      "kind": "synthetic",
+      "color": "#f0a5c0",
+      "glow": "rgba(240,165,192,.45)"
+    },
+    {
+      "id": "helheim",
+      "name": "Helheim",
+      "sphere": "shadow &mdash; failures, contradictions, near-misses",
+      "title": "The realm of the dead and the doubled",
+      "deep": "What went wrong and what was almost right. Helheim is not waste: a contradiction found here prevents the same error on the next cycle. Forget a failure and the agent will repeat it with confidence.",
+      "kind": "reflective",
+      "color": "#b9a6e8",
+      "glow": "rgba(185,166,232,.45)"
+    }
+  ]
+};

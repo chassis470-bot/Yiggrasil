@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yggdrasil — Spatial Memory for AI Agents</title>
+<link rel="stylesheet" href="css/yggdrasil.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🌳</text></svg>">
+</head>
+<body>
+
+<canvas id="canopy" aria-hidden="true"></canvas>
+<div id="motes" aria-hidden="true"></div>
+
+<header class="veil">
+  <h1 class="title">YGGDRASIL</h1>
+  <p class="subtitle">spatial memory &mdash; where <span class="svc">asgard</span> binds <span class="svc">midgard</span> to <span class="svc">helheim</span></p>
+</header>
+
+<main class="realm-grid" id="realmGrid"><!-- realms injected --></main>
+
+<section class="altar" id="altar" hidden>
+  <button class="altar-close" id="altarClose" aria-label="Close">&times;</button>
+  <div class="altar-body">
+    <h2 class="altar-title"><span id="altarName"></span></h2>
+    <p class="altar-sphere" id="altarSphere"></p>
+    <div class="altar-grid">
+      <div class="altar-col">
+        <h3>Kind</h3>
+        <p id="altarKind" class="altar-field">&mdash;</p>
+      </div>
+      <div class="altar-col">
+        <h3>Strength</h3>
+        <p id="altarStrength" class="altar-field">&mdash;</p>
+      </div>
+    </div>
+    <h3 class="altar-h3">Binding &mdash; subject &rarr; predicate &rarr; object</h3>
+    <pre class="binding" id="altarBinding">&mdash;</pre>
+    <h3 class="altar-h3">Deep memory</h3>
+    <p id="altarDeep" class="deep">&mdash;</p>
+    <div class="altar-actions">
+      <span class="echo" id="altarEcho"></span>
+    </div>
+  </div>
+</section>
+
+<footer class="veil foot">
+  <p><span class="count" id="echoCount">0</span> echoes held &middot; <span id="clock"></span></p>
+</footer>
+
+<script src="js/realms.data.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/realms.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
